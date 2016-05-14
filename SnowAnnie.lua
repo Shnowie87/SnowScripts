@@ -1,6 +1,19 @@
 if myHero.charName ~= "Annie" then return end
 
+function Welcome()
+    -- Print to the chat area
+    PrintChat ("Hello, welcome to SnowScripts. SnowAnnie Loaded")
+end
 
+function CurrentVersion()
+    -- Print to the chat area
+		PrintChat ("Loaded Version 0.1, Welcome to Development.")
+end
+
+function sacrsupport()
+    -- Print to the chat area
+		PrintChat ("It is suggested you use SAC:R with this script for maximum results")
+end
 -- Downloads Nebelwoli's L33T UPL Prediction Manager--
 if not _G.UPLloaded then 
   if FileExist(LIB_PATH .. "/UPL.lua") then 
@@ -16,6 +29,9 @@ end
 function OnLoad() 
 	IniMenu() 
 	IniSpells() 
+	Welcome()
+	CurrentVersion()
+	sacrsupport()
 end 
  
 function IniMenu() 
